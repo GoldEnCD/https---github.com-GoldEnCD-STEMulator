@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>STEM</title>
+
+
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+
+
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbg navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/LOGO.png" height="31" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#spelet">Spēlēt</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#kasirs">Kas ir STEM</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#palidziba">Palīdzība</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#parmums">Par mums</a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <section class="pt-77">
+        <div class="spotimg"><img src="assets/img/spots.png"></div>  
+             <div class="typecontainer">
+                  <span class="text firsty-text ">Mācies</span>
+                  <span class="text second-text maing" id="sc">STEM</span>
+              </div>
+
+                  
+          
+           <script>
+          
+          const text = document.querySelector(".second-text");
+        const el = document.getElementById('sc');
+        const texts = ["STEM", "Matemātiku", "Bioloģiju", "Fiziku", "Ģeogrāfiju", "Ķīmiju", "Astronomiju"];
+        let index = 0;
+            
+            
+
+        const textLoad = () => {
+
+            text.textContent = texts[index];
+            if (index === 0) {
+              el.classList.add("secg");
+            }
+            else if (index !== 0) {
+              el.classList.remove("secg");
+
+              }
+
+            index = (index + 1) % texts.length;
+        }
+        textLoad(); // Initial load
+        setInterval(textLoad, 3000); // Repeat every 3 seconds
+          </script>
+
+          
+
+
+          <!--DYNAMIC BOXES ssss-->
+
+          <div class="dynboxes">
+            <div class="platform"><img src="assets/img/platform.png" class=""></div>
+            <div class="boxes">
+                <div class="math"><img src="assets/img/finalmc.png"></div>
+                <div class="phys"><img src="assets/img/finalpc.png"></div>
+                <div class="chem"><img src="assets/img/finalcc.png"></div>
+                <div class="biol"><img src="assets/img/finalbc.png"></div>
+            </div>
+        
+         </div>
+
+
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5 pt-md-9 mb-6" id="feature">
+
+        <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block" style="background-image:url(assets/img/category/shape.png);opacity:.5;">
+        </div>
+        
+        <!-- 4 bonusu konteineris-->
+
+        <div class="container">
+          <h1 class="fs-9 fw-bold mb-4 text-center maing"> Studējot STEM<br class="d-none d-xl-block" /> Tu iemācies </h1>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-2"> <img class="mb-3 ms-n3" src="assets/img/category/icon1.png" width="75" alt="Feature" />
+              <h4 class="mb-3">Risināt problēmas</h4>
+              <p class="mb-0 fw-medium text-secondary">Izgudro jaunu tehnoloģiju, kas ir labvēlīga cilvēkiem.</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-2"> <img class="mb-3 ms-n3" src="assets/img/category/icon2.png" width="75" alt="Feature" />
+              <h4 class="mb-3">Analītiski domāt</h4>
+              <p class="mb-0 fw-medium text-secondary"> Izdomā jauninājumus un risinājumus problēmām, ar kurām pašlaik esam saskarē.</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-2"> <img class="mb-3 ms-n3" src="assets/img/category/icon3.png" width="75" alt="Feature" />
+              <h4 class="mb-3">Būt kreatīvs</h4>
+              <p class="mb-0 fw-medium text-secondary">Atraisi savu radošumu, lai palīdzētu izrisināt Visuma brīnumus un nebeidzamās iespējas, kas zinātnei piemīt.</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-2"> <img class="mb-3 ms-n3" src="assets/img/category/icon4.png" width="75" alt="Feature" />
+              <h4 class="mb-3">Precīzi secināt</h4>
+              <p class="mb-0 fw-medium text-secondary">Iemācies precīzi prognozēt un aprēķināt iespējamus notikumus.</p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      
+      
+      <section class="pt-5" id="spelet">
+
+        <div class="row">
+            <center><p class="fw-bold fs-7 secg">Spēļu izvēlne</p></center>
+            
+            <div class="bgcycle"></div>
+            <div class="bgimgp"><img src="assets/img/buttonbg.jpg" height="100%" width="100%">
+           </div>
+            </div>
+            <div class="bgcycle2"></div>
+            <div class="allelems img-fluid"><img src="assets/img/bbgover.png" height="100%" width="100%"></div>
+            
+            <a href="spele.html" class="actionb"><img src="assets/img/Default.png" class="buttonimg"></a>
+            
+
+    </section>
+
+
+      <!-- SEKCIJAS BEIGAS-->
+
+
+
+
+      <section class="pt-5" id="validation">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="text-secondary sfd">Pasaulei nav gaiša nākotne ja nav</h5>
+              <h2 class="mb-2 fs-7 fw-bold maing sfd">Inženieri un Zinātnieki</h2>
+              <p class="fs-3 fw-medium text-secondary sfd">
+                Zinātnieki un Inženieri ļauj cilvēcei evolucionēt uz nākamo līmeni, jo bez viņiem mēs apstājamies. <br>
+                   </p>
+
+
+            </div>
+            <div class="col-lg-6 movebit"><img class="scimg" src="assets/img/validation/validation.png"  /></div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5" id="kasirs">
+
+        <div class="container">
+          <div class="imggifoverlay"><img src="assets/img/gifoverlay.png"></div>
+          <div class="row">
+            
+            <div class="col-lg-6"><img class="img-fluid bb roundedge gifimg" src="assets/img/maxqua.gif"/></div>
+            
+            <div class="col-lg-6">
+              <p class="fs-7 fw-bold mb-2 maing" href="#kasstem">Kas ir STEM?</p>
+              <p class="fs-3 fw-bold mb-2 secg"> &ensp;STEM mācību nozare nav kā citas</p>
+              <p class="mb-4 fw-medium text-secondary">
+                &emsp;STEM, nav tikai kāds mācību priekšmetu kopums. Esot kādā no STEM profesijām,
+                 tas ir kā aizraujošs piedzīvojums.<br>Jūs varat kļūt par zinātniecisku pētnieku, kas risina kosmiskos noslēpumus.
+                  Jūs varat būt astronoms, kas pēta galaktikas un planētas, vai pat matemātikas kodu vai sarežģītu problēmu atšifrētājs,
+                   kuras citi cilvēki neprot izrēķināt. Protams ir vēl citas STEM profesijas.<br>
+                   <p class="fs-3 fw-bold mb-2 secg"> &ensp;Unikāls profesiju paveids</p>
+                   <p class="mb-4 fw-medium text-secondary">
+                    Mācīties kādā no STEM programmām ir kā būt izgudrojumu un inovāciju vadonim. STEM profesijas arī bieži var justies kā spēle;
+                    tu eksperimentē ar visādām lietām un pārbaudi, kas darbojas un kas nē.</p>
+              </p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5" id="marketer">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="fw-bold fs-7 maing">Interesanti fakti par STEM un tās ietekmi</p>
+              <p class="mb-4 fw-medium text-secondary">Mēs garantējam, ka jūs nezinat vismaz vienu no šiem brīnumainiem faktiem.</p>
+              <h4 class="fw-bold fs-1">DNS</h4>
+              <p class="mb-4 fw-medium text-secondary">Iedomājies, ja mēs grāmatā pierakstītu instrukcijas kā cilvēku izveidot. Tā grāmata būtu <strong>miljons lappušu bieza!</strong> DNS ir,
+                 kā cilvēka ķermeņa ārkārtīgi detalizētā instrukciju rokasgrāmata.</p>
+              <h4 class="fw-bold fs-1">Visums</h4>
+              <p class="mb-4 fw-medium text-secondary">Visums ir kā milzīga, nebeidzama kosmosa telpa. Dažas zvaigznes, ko mēs redzam naktī, ir tik tālu, ka to gaisma sāka doties pie mums, kad dinozauri klaiņoja pa Zemi!</p>
+              <h4 class="fw-bold fs-1">Spīdoši organismi okeānā</h4>
+              <p class="mb-4 fw-medium text-secondary">Dažas jūras radības var radīt savu gaismu! Tas ir tā, it kā viņiem būtu sava iebūvēta naktslampiņa.</p>
+              <h4 class="fw-bold fs-1">Radības Okeāna dziļumos</h4>
+              <p class="mb-4 fw-medium text-secondary">Mēs esam izpētījuši vairāk lietas un mistikas kosmosā nekā mūsu planētas okeānu dziļumos! Okeāna dziļākajās vietās ir radības, kas izskatās kā no citas planētas, un mēs joprojām atklājam jaunas.</p>
+              <h4 class="fw-bold fs-1">Zemes ozona slānis</h4>
+              <p class="mb-4 fw-medium text-secondary"> Zemei ir slepens vairogs - tās ozona slānis. Tas darbojas kā milzīgs neredzams vairogs, pasargājot mūs no kaitīga kosmosa starojuma un radiācijas.</p>
+              
+            </div>
+            <div class="col-lg-6 earthmoon">
+                  <img class="img-fluid sizes" src="assets/img/earthcrop.png">
+            </div>
+
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <section class="pt-5" id="palidziba">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="mb-2 fs-7 fw-bold maing sfd">Palīdzība</h2>
+              <h4 class="fw-bold fs-1">Mājaslapa</h4>
+              <p class="fs-3 fw-medium text-secondary sfd">
+              Lai navigētos pa mājaslapu, var izmantot navigācijas joslu, kas atrodas ekrāna augšdaļā.
+               vietnes apakšdaļā arī ir navigācijas pogas </p>
+               <h4 class="fw-bold fs-1">Interaktīvā Spēle</h4>
+               <p class="fs-3 fw-medium text-secondary sfd" style="color: red;">
+                JĀIEVADA PAMĀCĪBA KAD PABEIGTA INTERAKTĪVA SPĒLE</p>
+
+
+            </div>
+            <div class="col-lg-6 movebit"><img class="scimg2" src="assets/img/help.jpg" style="width: 350px;"  /></div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+
+      <section class="pt-5" id="parmums">
+
+        <div class="container">
+
+          <div class="row">
+            
+            <div class="col-lg-6"><img class="img-fluid bb roundedge gifimg" src="assets/img/uvsk.jpg"/></div>
+            
+            <div class="col-lg-6">
+              <p class="fs-7 fw-bold mb-2 maing" href="#kasstem">Par mums</p>
+              <p class="fs-3 fw-bold mb-2 secg"> &ensp;Skolēni no Ulbrokas Vidusskolas</p>
+              <p class="fs-1 fw-medium text-secondary">
+              Šī vietne tika izveidota 2023. gada Latvijas hakatonam, kas norisinājās no 30. septembra
+              līdz 1. oktobrim. Mēs esam sešu devītklasnieku komanda, kuri mācās Ulbrokas vidusskolā.<br>
+       
+              </p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+
+ 
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-2 pb-lg-5">
+
+        <div class="containersa">
+          <div class="row border-top border-top-secondary pt-7" style="justify-content: space-between;">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-6 mb-lg-0 mb-sm-2 order-1 order-md-1 order-lg-1" style="margin-top: 20px;"><img class="mb-4" src="assets/img/LOGO.png" width="184" alt="" /></div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-3 order-md-3 order-lg-2" style="margin-top: 20px;">
+              <p class="fs-5 mb-lg-4 maing fw-bold">Sadaļas</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#parmums">Par mums</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#kasirs">Kas ir STEM</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#palidziba">Palīdzība</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#spelet">Spēlēt</a></li>
+              </ul>
+            </div>
+
+           
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- Footeris  -->
+      <footer class="text-center py-0">
+
+        <div class="container" style="margin-top: 50px;">
+            <div class="row justify-content-between">
+              <div style="justify-content: center;">
+                <p class="secg">&copy; 2023 MVDELF </p>
+              </div> 
+            </div>
+        </div>
+
+      </footer>
+      <!--Footera beigas-->
+
+
+    </main>
+    <!-- Galvena satura beigas-->
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>

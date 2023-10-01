@@ -1,0 +1,198 @@
+:root {
+    --bs-maingradientcol: linear-gradient(323deg, rgba(18,255,0,1) 0%, rgba(29,73,255,1) 100%);
+}
+
+.maing {
+    background: var(--bs-maingradientcol);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+body { 
+    background-color: #020124;
+   
+    font-family: "Poppins", "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.virsraksts {
+    text-align: center;
+    margin-left: -50px;
+}
+
+header {
+    width: 100%;
+    height: 20px;
+    display: flex;
+
+}
+
+.left, .right {
+    width: 50%;
+}
+
+main {
+    height: 400px;
+    width: 100%;
+}
+
+.back-button {
+    transition-duration: 0.4s;
+    background-color: #12FF00;
+    border-radius: 10px;
+    border: 4px solid #0e6608;
+    font-weight: bold;
+    width: 150px;
+    height: 35px;
+}
+
+.back-button:hover {
+    background-color: white; 
+    color: green;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.middle {
+    width: 35%;
+    height: 90%;
+    position: relative;
+    margin-left: 30%;
+    top: 50px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    border-radius: 30px;
+  
+}
+
+.matem-text {
+    position: absolute;
+    bottom: 50%;
+    right: 37%;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.matem-img {
+    border-radius: 30px;
+}
+
+.matematikas-img {
+    border-radius: 30px;
+    height: 215px;
+}
+
+
+.button-matem {
+    transition-duration: 0.4s;
+    background-color: #12FF00;
+    border-radius: 10px;
+    border: 4px solid #0e6608;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    margin-left: 28%;
+  }
+  
+  .button-matem:hover {
+    background-color: white; 
+    color: green;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 40px 80px 0 rgba(0,0,0,0.19);
+  }
+
+.middle-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.left-button {
+    margin-top: 100px;
+    margin-left: 50%;
+}
+
+.down-button {
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+.right-button {
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+
+.down-left {
+    width: 25%;
+    height: 70%;
+    position: relative;
+    margin-left: 70px;
+    margin-top: 25px;
+    opacity: 0.9;
+    border-radius: 30px;
+}
+
+.down-middle{
+    width: 25%;
+    height: 70%;
+    position: relative;
+    margin-left: 70px;
+    margin-top: 25px;
+    opacity: 0.9;
+    border-radius: 30px;
+    
+}
+
+.down-right{
+    width: 25%;
+    height: 70%;
+    position: relative;
+    margin-left: 70px;
+    margin-top: 25px;
+    opacity: 0.9;
+    border-radius: 30px;
+}
+
+.button-footer {
+    margin-top: 50%;
+}
+
+.maths {
+    width: 20%;
+    height: 45%;
+    position: absolute;
+    margin-top: -70px;
+}
+
+.biology {
+    width: 17%;
+    height: 25%;
+    position: absolute;
+    margin-top: -65px;
+}
+
+.uzd-teksts {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 80px;
+    color: #12FF00;
+}
+
+.biologijas-teksts {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: -35px;
+    color: #12FF00;
+}
+
+.secg {
+    margin-left: 650px;
+    color: yellow;
+    top: 2000px;
+
+}
